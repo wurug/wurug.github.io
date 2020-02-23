@@ -1,0 +1,308 @@
+<html>
+<head>
+    <style>
+
+
+        .intro {
+            position: absolute;
+            width: 100%;
+            top: 60%;
+            left: 0;
+            text-align: center;
+            -webkit-transform: translate(0%, -50%);
+            -moz-transform: translate(0%, -50%);
+            -ms-transform: translate(0%, -50%);
+            -o-transform: translate(0%, -50%);
+            transform: translate(0%, -50%);
+            padding: 0 15px;
+            color: aqua;
+            font-size: 200%
+        }
+
+        .pfblock-title {
+            font-weight: 800;
+        }
+
+
+        .pfblock-line {
+            background: rgba(135, 135, 135, 0.5);
+            width: 100px;
+            height: 1px;
+            margin: 30px auto;
+        }
+
+        h2 {
+            font-size: 30px;
+            margin: 0 0 30px;
+        }
+
+        .pfblock-line {
+            background: rgba(135, 135, 135, 0.5);
+            width: 100px;
+            height: 2px;
+            margin: 30px auto;
+        }
+
+        .pfblock-title {
+            width: 500px;
+            margin: 30px auto;
+            font-weight: 800;
+        }
+
+        h2 {
+            font: 700 40px/1.2 Raleway, sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            margin: 5px 0 5px;
+            color: #222;
+        }
+
+        .pfblock {
+            padding: 120px 0 100px;
+        }
+
+        .pfblock-header {
+            text-align: center;
+            margin: 0 0 60px;
+        }
+
+
+        .scroll-down {
+            position: absolute;
+            left: 50%;
+            bottom: 40px;
+            border: 2px solid #fff;
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+            margin-left: -15px;
+            display: block;
+            z-index: 10;
+            text-align: center;
+        }
+
+            .scroll-down span {
+                position: relative;
+                color: #fff;
+                -webkit-animation-name: drop;
+                -webkit-animation-duration: 1s;
+                -webkit-animation-timing-function: linear;
+                -webkit-animation-delay: 0s;
+                -webkit-animation-iteration-count: infinite;
+                -webkit-animation-play-state: running;
+                animation-name: drop;
+                animation-duration: 1s;
+                animation-timing-function: linear;
+                animation-delay: 0s;
+                animation-iteration-count: infinite;
+                animation-play-state: running;
+            }
+
+        @-webkit-keyframes drop {
+            0% {
+                top: 0px;
+                opacity: 0;
+            }
+
+            30% {
+                top: 10px;
+                opacity: 1;
+            }
+
+            100% {
+                top: 25px;
+                opacity: 0;
+            }
+        }
+
+        @keyframes drop {
+            0% {
+                top: 0px;
+                opacity: 0;
+            }
+
+            30% {
+                top: 10px;
+                opacity: 1;
+            }
+
+            100% {
+                top: 25px;
+                opacity: 0;
+            }
+        }
+
+
+        #footer {
+            background: #222;
+            text-align: center;
+            padding: 40px 0;
+            color: #FFF;
+        }
+
+        .copyright {
+            margin: 0;
+        }
+
+            .copyright a {
+                border-bottom: 1px dotted #fff;
+            }
+
+        #footer span {
+            animation-iteration-count: infinite;
+            -webkit-animation-iteration-count: infinite;
+            color: #ff5252;
+        }
+
+        .social-links {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 20px;
+        }
+
+            .social-links li {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            .social-links a {
+                width: 36px;
+                height: 36px;
+                display: block;
+                line-height: 35px;
+                text-align: center;
+                border: 1px solid rgba(255, 255, 255, .1);
+                -webkit-border-radius: 3px;
+                -moz-border-radius: 3px;
+                border-radius: 3px;
+                font-size: 14px;
+                color: rgba(255, 255, 255, .2);
+            }
+
+                .social-links a:hover {
+                    border: 1px solid rgba(255, 255, 255, .5);
+                    color: rgba(255, 255, 255, .8);
+                }
+    </style>
+
+
+
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+</head>
+<body>
+    <section id="home" class="back">
+        <img src="b_569d17e6aa5cf.jpg" style="position: center; top: 0px; left: 0px" height="100%" width="100%" />
+        <img src="397_oooo.plus.png" style="position: absolute; top: 0px; left: 550px" />
+        <div class="intro">
+            <div>Привет меня зовут Глеб Панюта и я</div>
+            <h1>Веб разработчик</h1>
+        </div>
+    </section>
+
+    <header>
+
+        <div class="collapse navbar-collapse" id="custom-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#portfolio">Дизайны</a></li>
+                <li><a href="#skills">Скилл</a></li>
+                <li><a href="#contact">Связатса со мной</a></li>
+            </ul>
+        </div>
+
+    </header>
+
+
+
+    <section id="portfolio" class="pfblock">
+
+        <div class="pfblock-header wow fadeInUp">
+            <h2 class="pfblock-title">Примеры дизайнов</h2>
+            <div class="pfblock-line"></div>
+        </div>
+
+        <div style="text-align:center">
+            <img src="item-1.jpg" height="30%" width="25%" />
+            <img src="item-2.jpg" height="30%" width="25%" />
+            <img src="item-3.jpg" height="30%" width="25%" />
+        </div> <br />
+        <div style="text-align:center">
+            <img src="item-4.jpg" height="30%" width="25%" />
+            <img src="item-5.jpg" height="30%" width="25%" />
+            <img src="item-6.jpg" height="30%" width="25%" />
+        </div>
+
+    </section>
+
+    <a href="#portfolio">
+        <div class="scroll-down">
+            <span>
+                <i class="fa fa-angle-down fa-2x"></i>
+            </span>
+        </div>
+    </a>
+
+    <section id="skills">
+
+        <div class="col-sm-6 col-sm-offset-3">
+
+            <div class="pfblock-header wow fadeInUp">
+                <h2 class="pfblock-title">Мой скилл</h2>
+                <div class="pfblock-line"></div>
+            </div>
+
+        </div>
+
+        <div class="w3-container">
+
+
+            <div class="w3-light-grey">
+                <div class="w3-container w3-red w3-center" style="width:50%">Програмирывание 50%</div>
+            </div><br>
+
+            <div class="w3-light-grey">
+                <div class="w3-container w3-blue" style="width:75%">Веб дизайн 75%</div>
+            </div><br>
+
+        </div>
+    </section>
+
+
+
+    <section id="contact">
+        <footer id="footer">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-sm-12">
+
+                        <ul class="social-links">
+                            <li><a href="https://www.facebook.com/profile.php?id=100024018000837" class="wow fadeInUp"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://pin.it/tgwmySD" class="wow fadeInUp" data-wow-delay=".4s"><i class="fa fa-pinterest"></i></a></li>
+                        </ul>
+
+                        <p class="heart">
+                            <span class="fa fa-heart fa-2x animated pulse"></span>
+                        </p>
+                        <p class="copyright">
+                            © 2020 Глеб Панюта
+                        </p>
+
+                    </div>
+
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </footer>
+    </section>
+
+
+
+</body>
+</html>
