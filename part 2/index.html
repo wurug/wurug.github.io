@@ -18,6 +18,11 @@
             color: aqua;
             font-size: 200%
         }
+        .intro-img {
+            position: absolute;
+            transform: translateX(-50%);
+            left: 50%;
+        }
 
         .pfblock-title {
             font-weight: 800;
@@ -79,6 +84,7 @@
             display: block;
             z-index: 10;
             text-align: center;
+            transform: translateX(-50%);
         }
 
             .scroll-down span {
@@ -187,6 +193,13 @@
          html{
                     scroll-behavior:smooth;
                 }
+         .wow {
+             justify-content: center;
+             align-items: center;
+         }
+         .social-links a {
+             display: flex;
+         }
         
     </style>
 
@@ -203,8 +216,8 @@
 </head>
 <body>
     <section id="home" class="back">
-        <img src="b_569d17e6aa5cf.jpg" style="position: center; top: 0px; left: 0px" height="100%" width="100%" />
-        <img src="397_oooo.plus.png" style="position: absolute; top: 0px; left: 550px" />
+        <img src="b_569d17e6aa5cf.jpg"  style="position: center; top: 0px; left: 0px" height="100%" width="100%" />
+        <img src="397_oooo.plus.png" class="intro-img" />
         <div class="intro">
             <div>Привет меня зовут Глеб Панюта и я</div>
             <h1>Веб разработчик</h1>
