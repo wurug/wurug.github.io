@@ -1,89 +1,45 @@
-/* скрываем чекбокс */
-#menu__toggle {
-  opacity: 0;
+.back{
+  background: url(Фотка.jpg);
+  background-repeat: no-repeat;
+  -moz-background-size: 100%;
+  -webkit-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+
 }
-/* стилизуем кнопку */
-.menu__btn {
-  display: flex; /* используем flex для центрирования содержимого */
-  align-items: center;  /* центрируем содержимое кнопки */
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  width: 26px;
-  height: 26px;
-  cursor: pointer;
-  z-index: 1;
+IMG.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
 }
-/* добавляем "гамбургер" */
-.menu__btn > span,
-.menu__btn > span::before,
-.menu__btn > span::after {
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background-color: #616161;
-}
-.menu__btn > span::before {
-  content: '';
-  top: -8px;
-}
-.menu__btn > span::after {
-  content: '';
-  top: 8px;
-}
-/* контейнер меню */
-.menu__box {
-  display: block;
-  position: fixed;
-  visibility: hidden;
-  top: 0;
-  left: -100%;
-  width: 300px;
-  height: 100%;
-  margin: 0;
-  padding: 80px 0;
-  list-style: none;
+.main-text{
   text-align: center;
-  background-color: #ECEFF1;
-  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
 }
-/* элементы меню */
-.menu__item {
+hr{
+  border: none;
+  background-color: red;
+  color: red;
+  height: 2px;
+  width: 100px;
+}
+.pfblock-line{
+  background: rgba(135, 135, 135, 0.5);
+  width: 100px;
+  height: 2px;
+  margin: 30px auto;
+}
+.title{
+  font-weight: 800;
+}
+.item{
   display: block;
-  padding: 12px 24px;
-  color: #333;
-  font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  text-decoration: none;
+  margin-left: auto;
+  margin-right: auto 
 }
-.menu__item:hover {
-  background-color: #CFD8DC;
-}
-#menu__toggle:checked ~ .menu__btn > span {
-  transform: rotate(45deg);
-}
-#menu__toggle:checked ~ .menu__btn > span::before {
-  top: 0;
-  transform: rotate(0);
-}
-#menu__toggle:checked ~ .menu__btn > span::after {
-  top: 0;
-  transform: rotate(90deg);
-}
-#menu__toggle:checked ~ .menu__box {
-  visibility: visible;
-  left: 0;
-}
-.menu__btn > span,
-.menu__btn > span::before,
-.menu__btn > span::after {
-  transition-duration: .25s;
-}
-.menu__box {
-  transition-duration: .25s;
-}
-.menu__item {
-  transition-duration: .25s;
+#footer {
+ left: 0; bottom: 0; /* Левый нижний угол */
+ padding: 10px; /* Поля вокруг текста */
+ background: #39b54a; /* Цвет фона */
+ color: #fff; /* Цвет текста */
+ width: 100%; /* Ширина слоя */
 }
